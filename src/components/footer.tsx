@@ -5,9 +5,9 @@ const Footer: React.FC = () => {
   return (
     <footer className="bg-gradient-to-r from-slate-900 to-slate-800 border-t border-gray-800">
       <div className="max-w-7xl mx-auto px-6 py-4">
-        <div className="flex items-center justify-between">
+        <div className="flex flex-col md:flex-row items-center justify-between gap-4">
           {/* Copyright */}
-          <p className="text-gray-400 text-sm">
+          <p className="text-gray-400 text-sm text-center md:text-left">
             © {new Date().getFullYear()} Sameer Mall. All rights reserved.
           </p>
 
