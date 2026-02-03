@@ -1,1 +1,46 @@
 @import "tailwindcss";
+
+body {
+  font-family: 'JetBrains Mono', monospace;
+  cursor: none;
+}
+
+* {
+  cursor: none !important;
+}
+
+h1, h2, h3, h4, h5, h6 {
+  font-family: 'Fira Code', monospace;
+}
+
+nav, footer {
+  font-family: 'Fira Code', monospace;
+}
+
+.custom-cursor-dot {
+  width: 8px;
+  height: 8px;
+  background-color: white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 10000;
+  transform: translate(-50%, -50%);
+}
+
+.custom-cursor-circle {
+  width: 40px;
+  height: 40px;
+  border: 2px solid white;
+  border-radius: 50%;
+  position: fixed;
+  pointer-events: none;
+  z-index: 9999;
+  transform: translate(-50%, -50%);
+  transition: transform 0.15s ease-out, width 0.15s ease-out, height 0.15s ease-out;
+}
+
+.custom-cursor-circle.scale-150 {
+  width: 60px;
+  height: 60px;
+}

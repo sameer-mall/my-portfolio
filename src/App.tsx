@@ -5,6 +5,7 @@ import Home from './components/home'
 import About from './components/about'
 import Experience from './components/experience'
 import Footer from './components/footer'
+import CustomCursor from './components/CustomCursor'
 
 function AnimatedRoutes() {
   const location = useLocation()
@@ -24,6 +25,7 @@ function App() {
   return (
     <Router>
       <div className="min-h-screen bg-gradient-to-br from-black via-slate-900 to-gray-800 flex flex-col">
+        <CustomCursor />
         <Navbar />
         <div className="pt-20 flex-grow">
           <AnimatedRoutes />

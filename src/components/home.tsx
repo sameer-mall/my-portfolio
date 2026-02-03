@@ -43,6 +43,9 @@ const Home: React.FC = () => {
             src={profile_pic} 
             alt="Sameer Mall" 
             className="w-64 h-80 sm:w-80 sm:h-96 md:w-96 md:h-[28rem] rounded-2xl shadow-2xl border-4 border-blue-400/30 object-cover"
+            style={{
+              filter: 'drop-shadow(0 0 8px rgba(96, 165, 250, 0.8)) drop-shadow(0 0 16px rgba(96, 165, 250, 0.6))'
+            }}
           />
         </motion.div>
       </div>
