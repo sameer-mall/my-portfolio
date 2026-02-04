@@ -59,10 +59,10 @@ const About: React.FC = () => {
         <div className="columns-2 md:columns-3 gap-4 space-y-4">
           {[
             { id: 1, height: 'h-64', src: img1, alt: 'Gallery Image 1' },
-            { id: 2, height: 'h-80', src: img2, alt: 'Gallery Image 2' },
             { id: 3, height: 'h-56', src: img3, alt: 'Gallery Image 3' },
-            { id: 4, height: 'h-72', src: img4, alt: 'Gallery Image 4' },
             { id: 5, height: 'h-64', src: img5, alt: 'Gallery Image 5' },
+            { id: 2, height: 'h-80', src: img2, alt: 'Gallery Image 2' },
+            { id: 4, height: 'h-72', src: img4, alt: 'Gallery Image 4' },
             { id: 6, height: 'h-68', src: img6, alt: 'Gallery Image 6' },
           ].map((item, index) => (
             <motion.div
