@@ -38,7 +38,7 @@ const About: React.FC = () => {
         transition={{ duration: 0.5, delay: 0.4 }}
         className="text-lg text-gray-300 leading-relaxed mt-4"
       >
-        Outside of the office, I enjoy being outdoors wether thats playing pickleball and biking in the summer to skiing in the winter. I also love traveling and exploring new places and cultures. Fun Fact: I have travelled to over 20 countries. Feel free to connect with me on LinkedIn or check out my projects!
+        Outside of the office, I enjoy being outdoors whether that's playing pickleball and biking in the summer to skiing in the winter. I also love traveling and exploring new places and cultures. Fun Fact: I have travelled to over 20 countries. Feel free to connect with me on LinkedIn or check out my projects!
       </motion.p>
       <motion.p
         initial={{ opacity: 0 }}
