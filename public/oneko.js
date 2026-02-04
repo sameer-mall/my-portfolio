@@ -134,6 +134,17 @@
       mousePosY = event.clientY;
     });
     
+    // Add touch support for mobile
+    document.addEventListener("touchstart", function (event) {
+      mousePosX = event.touches[0].clientX;
+      mousePosY = event.touches[0].clientY;
+    });
+    
+    document.addEventListener("touchmove", function (event) {
+      mousePosX = event.touches[0].clientX;
+      mousePosY = event.touches[0].clientY;
+    });
+    
     if (persistPosition) {
       window.addEventListener("beforeunload", function (event) {
         window.localStorage.setItem("oneko", JSON.stringify({

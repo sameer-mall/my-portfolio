@@ -1,5 +1,7 @@
 import React from 'react';
 import { motion } from 'framer-motion';
+import { Link } from 'react-router-dom';
+import { FaArrowRight } from 'react-icons/fa';
 import profile_pic from '../assets/profile_pic.jpeg';
 
 const Home: React.FC = () => {
@@ -20,7 +22,7 @@ const Home: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.2 }}
             className="text-3xl sm:text-4xl md:text-5xl lg:text-6xl font-bold text-blue-400 mb-4 md:mb-6"
           >
-            Welcome to My Portfolio
+            Sameer Mall
           </motion.h1>
           <motion.p
             initial={{ opacity: 0, y: 20 }}
@@ -28,8 +30,22 @@ const Home: React.FC = () => {
             transition={{ duration: 0.6, delay: 0.4 }}
             className="text-base sm:text-lg md:text-xl text-gray-300 leading-relaxed"
           >
-            Hi! I'm a passionate developer dedicated to creating beautiful and functional web applications. This portfolio showcases my skills, projects, and professional journey.
+            Thanks for stopping by! <br/>I'm a software engineer and an avid learner. I love taking on new challenges and continuously improving my skills. Explore my portfolio to see some of the projects I've worked on and feel free to reach out!
           </motion.p>
+          <motion.div
+            initial={{ opacity: 0, y: 20 }}
+            animate={{ opacity: 1, y: 0 }}
+            transition={{ duration: 0.6, delay: 0.6 }}
+            className="mt-8"
+          >
+            <Link
+              to="/about"
+              className="inline-flex items-center gap-2 px-6 py-3 bg-blue-400/10 hover:bg-blue-400/20 text-blue-400 rounded-lg border border-blue-400/30 hover:border-blue-400/50 transition-all duration-300 group"
+            >
+              <span className="font-semibold">More About Me</span>
+              <FaArrowRight className="group-hover:translate-x-1 transition-transform duration-300" />
+            </Link>
+          </motion.div>
         </div>
 
         {/* Profile Picture */}

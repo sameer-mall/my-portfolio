@@ -4,7 +4,7 @@ const CustomCursor: React.FC = () => {
   const [dotPosition, setDotPosition] = useState({ x: 0, y: 0 });
   const [circlePosition, setCirclePosition] = useState({ x: 0, y: 0 });
   const [isPointer, setIsPointer] = useState(false);
-  const requestRef = useRef<number>();
+  const requestRef = useRef<number | undefined>(undefined);
 
   useEffect(() => {
     const updatePosition = (e: MouseEvent) => {
