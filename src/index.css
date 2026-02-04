@@ -2,11 +2,16 @@
 
 body {
   font-family: 'JetBrains Mono', monospace;
-  cursor: none;
 }
 
-* {
-  cursor: none !important;
+@media (pointer: fine) {
+  body {
+    cursor: none;
+  }
+
+  * {
+    cursor: none !important;
+  }
 }
 
 h1, h2, h3, h4, h5, h6 {
@@ -15,6 +20,18 @@ h1, h2, h3, h4, h5, h6 {
 
 nav, footer {
   font-family: 'Fira Code', monospace;
+}
+
+.custom-cursor-dot,
+.custom-cursor-circle {
+  display: none;
+}
+
+@media (pointer: fine) {
+  .custom-cursor-dot,
+  .custom-cursor-circle {
+    display: block;
+  }
 }
 
 .custom-cursor-dot {
